@@ -6,7 +6,7 @@ propose:
   expected_output: >
     Your clear and concise proposal for the motion.
     Include a strong argument in favor of the motion.
-  agent: debater
+  agent: debater_proponent
   output_file: output/propose.md
 
 oppose:
@@ -16,13 +16,8 @@ oppose:
   expected_output: >
     Your clear and concise proposal against the motion.
     Include a strong argument against the motion.
-  agent: debater
+  agent: debater_opponent
   output_file: output/oppose.md
-
-    Your clear and concise proposal for the motion.
-    Include a strong argument in favor of the motion.
-  agent: debater
-  output_file: output/propose.md
 
 decide:
   description: >

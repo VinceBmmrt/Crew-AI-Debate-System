@@ -12,9 +12,16 @@ class Crewaiapp():
     tasks: List[Task]
 
     @agent
-    def debater(self) -> Agent:
+    def debater_proponent(self) -> Agent:
         return Agent(
-            config=self.agents_config['debater'], # type: ignore[index]
+            config=self.agents_config['debater_proponent'], # type: ignore[index]
+            verbose=True
+        )
+
+    @agent
+    def debater_opponent(self) -> Agent:
+        return Agent(
+            config=self.agents_config['debater_opponent'], # type: ignore[index]
             verbose=True
         )
 

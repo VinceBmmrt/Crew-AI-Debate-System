@@ -3,11 +3,16 @@
 
 ## Description (FR / EN)
 
-🇫🇷 Ce projet utilise CrewAI pour organiser un débat argumentatif entre deux agents intelligents : un débatteur et un juge.  
-Le but est d'évaluer et de simuler des débats logiques sur divers sujets automatiquement.
+🇫🇷 Ce projet utilise CrewAI pour orchestrer un débat captivant entre deux agents IA 🤖🤖 et un juge impartial ⚖️.
+Il permet de simuler automatiquement des échanges d’arguments opposés, d’analyser les idées présentées 💬, et de désigner un gagnant 🏆 selon la logique et la force de persuasion.
+Vous êtes libre de connecter la clé API de votre choix 🔑 et d’utiliser les modèles que vous préférez 
+Par exemple, lancer un débat passionnant entre Claude, ChatGPT, et Deepseek ! 🚀
 
-🇬🇧 This project leverages CrewAI to simulate a structured argumentative debate between two AI agents: a debater and a judge.  
-The goal is to evaluate opposing perspectives on a motion and determine the winner based on logic and persuasiveness.
+🇬🇧 This project uses CrewAI to orchestrate an engaging debate between two AI agents 🤖🤖 and an impartial judge ⚖️.
+It automatically simulates opposing arguments, analyzes the ideas presented 💬, and selects a winner 🏆 based on logic and persuasiveness.
+Feel free to connect your preferred API key 🔑 and use whichever models you like — for example, spark an exciting debate between Claude, ChatGPT, and Deepseek! 🚀
+
+
 
 ## Demo
 
@@ -16,9 +21,13 @@ You can watch a demonstration of the debate app in action here:
 
 ## Agents Configuration
 
-- **debater**  
-  A compelling debater with a knack for persuasive arguments.  
-  Goal: Present clear and compelling arguments for or against the motion to persuade the audience.
+- **debater_proponent**
+A compelling debater presenting clear and persuasive arguments in favor of the motion.
+
+- **debater_opponent**
+A compelling debater presenting clear and persuasive arguments against the motion.
+
+Goal: Present clear and convincing arguments either for or against the motion to persuade the audience.
 
 - **judge**  
   An impartial judge with a keen sense of fairness and justice.  
