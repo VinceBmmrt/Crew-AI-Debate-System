@@ -8,22 +8,18 @@ from crewaiapp.crew import Crewaiapp
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
-# This main file is intended to be a way for you to run your
-# crew locally, so refrain from adding unnecessary logic into this file.
-# Replace with inputs you want to test with, it will automatically
-# interpolate any tasks and agents information
 
 def run():
     """
     Run the crew.
     """
     inputs = {
-        'topic': 'AI LLMs',
-        'current_year': str(datetime.now().year)
+        'motion': 'There needs to be strict laws to regulate the use of AI LLMs.',
     }
     
     try:
-        Crewaiapp().crew().kickoff(inputs=inputs)
+       result = Crewaiapp().crew().kickoff(inputs=inputs)
+       print(result.raw)
     except Exception as e:
         raise Exception(f"An error occurred while running the crew: {e}")
 
@@ -33,8 +29,7 @@ def train():
     Train the crew for a given number of iterations.
     """
     inputs = {
-        "topic": "AI LLMs",
-        'current_year': str(datetime.now().year)
+        'motion': 'There needs to be strict laws to regulate the use of AI LLMs.',
     }
     try:
         Crewaiapp().crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs)
@@ -57,8 +52,7 @@ def test():
     Test the crew execution and returns the results.
     """
     inputs = {
-        "topic": "AI LLMs",
-        "current_year": str(datetime.now().year)
+        "motion": "There needs to be strict laws to regulate the use of AI LLMs.",
     }
     
     try:

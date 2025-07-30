@@ -9,7 +9,7 @@ propose:
   agent: debater
   output_file: output/propose.md
 
-  oppose:
+oppose:
   description: >
     You are in opposition to the motion: {motion}.
     Come with very convincing argument against the motion.
