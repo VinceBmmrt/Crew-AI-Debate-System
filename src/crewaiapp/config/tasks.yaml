@@ -1,17 +1,35 @@
-research_task:
+propose:
   description: >
-    Conduct a thorough research about {topic}
-    Make sure you find any interesting and relevant information given
-    the current year is {current_year}.
+    Propose a motion: {motion}.
+    The motion should be relevant and interesting, suitable for a detailed report.
+    Come with very convincing argument in favor of the motion.
   expected_output: >
-    A list with 10 bullet points of the most relevant information about {topic}
-  agent: researcher
+    Your clear and concise proposal for the motion.
+    Include a strong argument in favor of the motion.
+  agent: debater
+  output_file: output/propose.md
 
-reporting_task:
+  oppose:
   description: >
-    Review the context you got and expand each topic into a full section for a report.
-    Make sure the report is detailed and contains any and all relevant information.
+    You are in opposition to the motion: {motion}.
+    Come with very convincing argument against the motion.
   expected_output: >
-    A fully fledged report with the main topics, each with a full section of information.
-    Formatted as markdown without '```'
-  agent: reporting_analyst
+    Your clear and concise proposal against the motion.
+    Include a strong argument against the motion.
+  agent: debater
+  output_file: output/oppose.md
+
+    Your clear and concise proposal for the motion.
+    Include a strong argument in favor of the motion.
+  agent: debater
+  output_file: output/propose.md
+
+decide:
+  description: >
+    Review the arguments for and against the motion: {motion}.
+    Decide which side has the stronger argument.
+  expected_output: >
+    Your clear and concise decision on the motion.
+    Include a strong argument for your decision.
+  agent: judge
+  output_file: output/decide.md
