@@ -93,15 +93,6 @@ crewai run
 
 This will start the CrewAI debate process using your configured agents and tasks. The results will be saved in a `report.md` file in the root folder.
 
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
-
-```bash
-$ crewai run
-```
-
-This command initializes the CrewAIApp Crew, assembling the agents and assigning them tasks as defined in your configuration.
-
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
 
 ## Understanding Your Crew
 
